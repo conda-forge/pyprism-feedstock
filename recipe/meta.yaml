@@ -1,6 +1,6 @@
 {% set name = "pyPRISM" %}
-{% set version = "1.0.2" %}
-{% set sha256 = "bc343b8827bdcfbe725639674ceca3e3c7a51bf352b7987a9ae4af85148c6deb" %}
+{% set version = "1.0.3" %}
+{% set sha256 = "bb47f56bd5164b8ecb69ff9eea34d5100796d567322a6a548bdbe297e298bcea" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
