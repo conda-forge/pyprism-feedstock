@@ -11,23 +11,24 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - pip
-    - toolchain
     - cython
-    - numpy >=1.8.0
+    - numpy
   run:
     - python
     - numpy
     - scipy
     - pint
 
-test: 
+test:
   requires:
     - pytest
   imports:
@@ -65,7 +66,7 @@ about:
     experimental scattering data. The goal of this framework is to reduce the
     barrier to correctly and appropriately using PRISM theory and to provide a
     platform for rapid calculations of the structure and thermodynamics of
-    polymeric fluids and nanocomposites. 
+    polymeric fluids and nanocomposites.
   doc_url: http://pyprism.readthedocs.io/
   dev_url: https://github.com/pyprism/pyprism
 
