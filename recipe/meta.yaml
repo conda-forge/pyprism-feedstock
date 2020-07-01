@@ -1,6 +1,6 @@
 {% set name = "pyPRISM" %}
-{% set version = "1.0.3" %}
-{% set sha256 = "bb47f56bd5164b8ecb69ff9eea34d5100796d567322a6a548bdbe297e298bcea" %}
+{% set version = "1.0.4" %}
+{% set sha256 = "bd196882bd2baa3aafdc3c25c0aecea6b7a81b618c64391099d170ad1849b487" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1002
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -46,7 +46,7 @@ about:
   license: NIST
   license_family: PUBLIC-DOMAIN
   license_file: LICENSE
-  summary: 'A python tool for Polymer Reference Interactions Site Model (PRISM) calculations'
+  summary: A python tool for Polymer Reference Interactions Site Model (PRISM) calculations
 
   description: |
     Polymer Reference Interaction Site Model (PRISM) theory describes the
