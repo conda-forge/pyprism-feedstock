@@ -1,5 +1,5 @@
 {% set name = "pyPRISM" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 {% set sha256 = "bb47f56bd5164b8ecb69ff9eea34d5100796d567322a6a548bdbe297e298bcea" %}
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1002
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
