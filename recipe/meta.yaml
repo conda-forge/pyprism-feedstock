@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1005
+  number: 1006
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
